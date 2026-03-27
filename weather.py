@@ -2,6 +2,7 @@
 series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree C)", "Rainfall amount (millimetres)"]
 
 def mean(in_series):
+    clean_data = [x for x in in_series if x is not None]
     pass
 
 def variance(in_series):
