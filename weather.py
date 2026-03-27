@@ -10,7 +10,12 @@ def variance(in_series):
     pass
 
 def standard_deviation(in_series):
-    pass
+    var = variance(in_series)
+
+    if var is None:
+        return None
+
+    return var ** 0.5
 
 
 def filter_series(year_series, month_series, day_series, data_series, max_date=None, min_date=None):
