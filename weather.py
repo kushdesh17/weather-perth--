@@ -1,4 +1,3 @@
-
 series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree C)", "Rainfall amount (millimetres)"]
 
 def mean(in_series):
@@ -8,7 +7,6 @@ def variance(in_series):
     pass
 
 def standard_deviation(in_series):
-    def standard_deviation(in_series):
     var = variance(in_series)
 
     if var is None:
