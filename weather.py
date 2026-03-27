@@ -4,7 +4,7 @@ series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree 
 def mean(in_series):
     clean_data = [x for x in in_series if x is not None]
     pass
-
+#Hi
 def variance(in_series):
     pass
 
