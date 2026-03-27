@@ -1,11 +1,13 @@
 series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree C)", "Rainfall amount (millimetres)"]
 
 def mean(in_series):
+    total = sum(in_series)
+    count = len(in_series)
+    return total/count
 
 
 def variance(in_series):
-
-
+    pass
 
 def standard_deviation(in_series):
     pass
