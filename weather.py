@@ -1,11 +1,21 @@
-
 series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree C)", "Rainfall amount (millimetres)"]
 
 def mean(in_series):
     pass
 
 def variance(in_series):
-    pass
+    clean_data = [x for x in in_series if x is not None]
+
+    if len(clean_data) == 0:
+        return None
+
+    avg = mean(clean_data)
+
+    total = 0
+    for x in clean_data:
+        total += (x - avg) ** 2
+
+    return total / len(clean_data)
 
 def standard_deviation(in_series):
     pass
